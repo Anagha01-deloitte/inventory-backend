@@ -19,10 +19,10 @@ public class employee {
     private String employeeAddress;
 
     @Column
-    private boolean employeeGender;
+    private gender employeeGender;
 
     @Column
-    private String employeeRole;
+    private role employeeRole;
 
     @Column
     private Timestamp employeeDOJ;
@@ -39,11 +39,11 @@ public class employee {
         return employeeAddress;
     }
 
-    public boolean isEmployeeGender() {
+    public gender isEmployeeGender() {
         return employeeGender;
     }
 
-    public String getEmployeeRole() {
+    public role getEmployeeRole() {
         return employeeRole;
     }
 
@@ -59,11 +59,11 @@ public class employee {
         this.employeeAddress = employeeAddress;
     }
 
-    public void setEmployeeGender(boolean employeeGender) {
+    public void setEmployeeGender(gender employeeGender) {
         this.employeeGender = employeeGender;
     }
 
-    public void setEmployeeRole(String employeeRole) {
+    public void setEmployeeRole(role employeeRole) {
         this.employeeRole = employeeRole;
     }
 

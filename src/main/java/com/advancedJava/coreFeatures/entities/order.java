@@ -23,7 +23,7 @@ public class order {
     private boolean orderReturned;
 
     @Column
-    private String paymentStatus;
+    private paymentStatus orderPaymentStatus;
 
     @Column
     private Timestamp orderDueDate;
@@ -59,8 +59,8 @@ public class order {
         return orderReturned;
     }
 
-    public String getPaymentStatus() {
-        return paymentStatus;
+    public paymentStatus getPaymentStatus() {
+        return orderPaymentStatus;
     }
 
     public Timestamp getOrderDueDate() {
@@ -99,8 +99,8 @@ public class order {
         this.orderReturned = orderReturned;
     }
 
-    public void setPaymentStatus(String paymentStatus) {
-        this.paymentStatus = paymentStatus;
+    public void setPaymentStatus(paymentStatus orderPaymentStatus) {
+        this.orderPaymentStatus = orderPaymentStatus;
     }
 
     public void setOrderDueDate(Timestamp orderDueDate) {

@@ -18,7 +18,7 @@ public class customer {
     private String customerAddress;
 
     @Column
-    private boolean customerGender;
+    private gender customerGender;
 
     @Column
     private long loyaltyPoints;
@@ -35,7 +35,7 @@ public class customer {
         return customerAddress;
     }
 
-    public boolean isCustomerGender() {
+    public gender isCustomerGender() {
         return customerGender;
     }
 
@@ -51,7 +51,7 @@ public class customer {
         this.customerAddress = customerAddress;
     }
 
-    public void setCustomerGender(boolean customerGender) {
+    public void setCustomerGender(gender customerGender) {
         this.customerGender = customerGender;
     }
 
